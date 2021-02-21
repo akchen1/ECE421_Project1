@@ -14,7 +14,6 @@ public class PickShareFunctional {
         Optional result = shares.map(symbol -> {
             if (index.get() != 0 && index.get() % 5 == 0) {
                 try {
-                    System.out.println("Sleeping for 1 Minute");
                     Thread.sleep(60000);
                     System.out.println("Finished");
                 } catch (InterruptedException e) {
