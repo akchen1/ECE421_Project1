@@ -42,6 +42,7 @@ public class PickShareFunctional {
         else
             System.out.println("None high priced under $500");
 
+        Thread.sleep(60000);
 
         long startTime2 = System.nanoTime();
         Optional<ShareInfo> max2 = PickShareFunctional.findHighPrices(Shares.symbols.stream());
